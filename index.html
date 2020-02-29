@@ -5,21 +5,61 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Style/style.css">
-    <script src="JS/index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Expense Reimbursement</title>
 </head>
-<body>
-    <header class="container-fluid" id="nav-header">
-        <ui class="nav justify-content-center">
-            <li class="nav-item" id="nav-li01"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ui>
+<body id="body_">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="" class="invisible">xxxxxxxx</a>
+        <a class="navbar-brand" id="brand">ER-System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <a href="" class="invisible">xxxx</a>
+            <li class="nav-item active"><a class="nav-link" href="#" id="nav01">Home</a></li>
+            <a href="" class="invisible">xxxx</a>
+            <li class="nav-item"><a class="nav-link" href="#" id="nav02">Send</a></li>
+            <a href="" class="invisible">xxxxxxxx</a>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <button type="button" class="btn btn-dark" id="logout" >Logout</button>
+          <button type="button" class="btn btn-dark" id="login">Login</button>
+        </div>
+    </div>
+      </nav>
+
+    <main id="main-content">
+        <div id="main_div" class="container" >
+            <br/><br/>
+            <div class="card border-dark mb-3 mx-auto" style="max-width: 18rem;" id="login_card">
+                <div class="card-header text-center">Sign In</div>
+                <div class="card-body text-dark mx-auto">
+                 <form action="" id="login-form">
+                     <label for="emp-type" id="user-dropdown">Sign in as:</label>
+                     <select name="emp" id="emp-type" required>
+                         <option value="default" selected disabled hidden>Select an option</option>
+                         <option value="employee">Employee</option>
+                         <option value="manager">Manager</option>
+                     </select><hr/>
+                     <label for="email">Email address</label>
+                     <input type="email" id="email" class="form-control" placeholder="Email" required>
+                     <label for="password">Password</label>
+                     <input type="password" id="password"class="form-control" required placeholder="Password"><br/>
+                     <button type="submit" class="btn btn-primary btn-sm btn-block">Log in</button>
+                    </form>
+                </div>
+              </div>
 
 
+        </div>
+        
+    </main>
 
-    </header>
+    <footer class="fixed-bottom">@copyright footer</footer>
 </body>
 </html>
