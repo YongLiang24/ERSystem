@@ -15,6 +15,6 @@
     cursor:pointer;
 } */
 
-.login-input{
+.login-input, .time{
     text-align: center;
 }

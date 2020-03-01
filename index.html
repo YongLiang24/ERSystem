@@ -39,9 +39,18 @@
     <main id="main-content">
         <div id="main_div" class="container" >
             <br/><br/>
+            <!-- Welcome page -->
+            <div id="welcome-page">
+                <h1 class="time">Welcome My friend</h1>
+                <h1 class="time" id="time" ></h1><br/><hr/>
+                <h5 class="time">What would you like to do today?</h3>
+
+
+
+
+            </div>
             <!-- Login Card -->
             <div class="card border-dark mb-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="max-width: 18rem;" id="login_card">
-                <!-- <div class="card-header text-center bg-white">Log In</div> -->
                 <div class="card-body text-dark mx-auto">
                  <form action="" id="login-form">
                      <label for="emp-type" id="user-dropdown">Log in as:</label>
@@ -58,39 +67,26 @@
                     </form>
                 </div>
               </div>
-        <!--Employee menu cards  -->
-            <ul class="container" id="list-cards">
-            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="first-card">
-                <div class="card-header text-center">Submit Request</div>
-                <div class="card-body">
-                  <p class="card-text">Submit a Reimbursement Request.</p>
+              <!-- Submit Card -->
+              <div class="card border-dark mb-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="max-width: 18rem;" id="request-card">
+                <div class="card-title mx-auto"><strong>Reimbursement Request</strong></div><hr/>
+                <div class="card-body text-dark mx-auto">
+                 <form action="" id="request-form">
+                     <label for="emp-type" id="user-dropdown"><strong>Type</strong></label>
+                     <select name="emp" id="reimb-type" required>
+                         <option value="default" selected disabled hidden>Select an option</option>
+                         <option value="employee">Travel</option>
+                         <option value="manager">Other</option>
+                     </select><hr/>
+                     <label for="spent-reason" class="login-input" ><strong>1. What did you spend on?</strong></label>
+                     <textarea rows="4" id="spent-reason" class="form-control" placeholder="What did you spend on?" required></textarea>
+                     <label for="cost" class="login-input"><strong> How much did you spend?</strong></label>
+                     <input type="number" id="cost"class="form-control" required placeholder="Amount"><br/>
+                     <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
+                    </form>
                 </div>
-              </div>
-            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="second-card">
-                <div class="card-header text-center">My Pending Requests</div>
-                <div class="card-body">
-                    <p class="card-text">View or Remove Your Pending Requests.</p>
-                </div>
-            </div>
-
-            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="third-card">
-                <div class="card-header text-center">View Resolved Requests</div>
-                <div class="card-body">
-                  <p class="card-text">View All Your Resolved Requests.</p>
-                </div>
-              </div>
-
-            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="fourth-card">
-                <div class="card-header text-center">My Profile</div>
-                <div class="card-body">
-                  <p class="card-text">View or Update Your Profile Information.</p>
-                </div>
-              </div>
-            </ul>
     </div>    
-</main>
-
-    
+</main>   
 </body>
 <footer class="fixed-bottom">@copyright footer</footer>
 </html>
