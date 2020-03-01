@@ -10,6 +10,7 @@ let timeObj = document.getElementById("time");
 
 // $("#emp-nav").hide();
 // $("#emp-nav").show();
+$("#login-card").hide();
     clockDisplay()
     $("#request-card").hide();
 
@@ -38,10 +39,7 @@ let timeObj = document.getElementById("time");
 //login logic starts
 let logout = document.getElementById("logout");
 let login = document.getElementById("login");
-let loginCard = document.getElementById("login_card");
 
-logout.hidden=false;
-login.hidden=true;
     logout.addEventListener('click', function(){
         console.log(this.id)
     })
