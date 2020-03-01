@@ -42,7 +42,6 @@ let loginCard = document.getElementById("login_card");
 
 logout.hidden=false;
 login.hidden=true;
-loginCard.hidden=true;
     logout.addEventListener('click', function(){
         console.log(this.id)
     })
