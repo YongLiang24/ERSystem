@@ -10,6 +10,7 @@
     <title>Expense Reimbursement</title>
 </head>
 <body id="body_">
+    <!-- Nav bar components -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a href="" class="invisible">xxxxxxxx</a>
@@ -17,15 +18,17 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+        <a href="" class="invisible">xxx</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <a href="" class="invisible">xxxx</a>
-            <li class="nav-item active"><a class="nav-link" href="#" id="nav01">Home</a></li>
-            <a href="" class="invisible">xxxx</a>
-            <li class="nav-item"><a class="nav-link" href="#" id="nav02">Send</a></li>
-            <a href="" class="invisible">xxxxxxxx</a>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <ul class="navbar-nav mr-auto" id="emp-nav" >
+              <a href="" class="invisible">xxx</a>
+            <li class="nav-item active"><a class="nav-link" href="#" id="nav01">My Home</a></li>
+            <a ref="" class="invisible">xxx</a>
+            <li class="nav-item"><a class="nav-link" href="#" id="nav02">Submit Request</a></li>
+            <a ref="" class="invisible">xxx</a>
+            <li class="nav-item"><a class="nav-link" href="#">View Request</a></li>
+            <a ref="" class="invisible">xxx</a>
+            <li class="nav-item"><a class="nav-link" href="#">My Profile</a></li>
           </ul>
           <button type="button" class="btn btn-dark" id="logout" >Logout</button>
           <button type="button" class="btn btn-dark" id="login">Login</button>
@@ -36,30 +39,58 @@
     <main id="main-content">
         <div id="main_div" class="container" >
             <br/><br/>
-            <div class="card border-dark mb-3 mx-auto" style="max-width: 18rem;" id="login_card">
-                <div class="card-header text-center">Sign In</div>
+            <!-- Login Card -->
+            <div class="card border-dark mb-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="max-width: 18rem;" id="login_card">
+                <!-- <div class="card-header text-center bg-white">Log In</div> -->
                 <div class="card-body text-dark mx-auto">
                  <form action="" id="login-form">
-                     <label for="emp-type" id="user-dropdown">Sign in as:</label>
+                     <label for="emp-type" id="user-dropdown">Log in as:</label>
                      <select name="emp" id="emp-type" required>
                          <option value="default" selected disabled hidden>Select an option</option>
                          <option value="employee">Employee</option>
                          <option value="manager">Manager</option>
                      </select><hr/>
-                     <label for="email">Email address</label>
+                     <label for="email" class="login-input" >Email address</label>
                      <input type="email" id="email" class="form-control" placeholder="Email" required>
-                     <label for="password">Password</label>
+                     <label for="password" class="login-input">Password</label>
                      <input type="password" id="password"class="form-control" required placeholder="Password"><br/>
                      <button type="submit" class="btn btn-primary btn-sm btn-block">Log in</button>
                     </form>
                 </div>
               </div>
+        <!--Employee menu cards  -->
+            <ul class="container" id="list-cards">
+            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="first-card">
+                <div class="card-header text-center">Submit Request</div>
+                <div class="card-body">
+                  <p class="card-text">Submit a Reimbursement Request.</p>
+                </div>
+              </div>
+            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="second-card">
+                <div class="card-header text-center">My Pending Requests</div>
+                <div class="card-body">
+                    <p class="card-text">View or Remove Your Pending Requests.</p>
+                </div>
+            </div>
 
+            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="third-card">
+                <div class="card-header text-center">View Resolved Requests</div>
+                <div class="card-body">
+                  <p class="card-text">View All Your Resolved Requests.</p>
+                </div>
+              </div>
 
-        </div>
-        
-    </main>
+            <div class="card text-white border-dark mx-auto bg-info mb-3" style="max-width: 20rem; max-height: 8rem;" id="fourth-card">
+                <div class="card-header text-center">My Profile</div>
+                <div class="card-body">
+                  <p class="card-text">View or Update Your Profile Information.</p>
+                </div>
+              </div>
+            </ul>
+    </div>    
+</main>
 
-    <footer class="fixed-bottom">@copyright footer</footer>
+    
 </body>
+<footer class="fixed-bottom">@copyright footer</footer>
 </html>

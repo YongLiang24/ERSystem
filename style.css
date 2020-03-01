@@ -9,3 +9,12 @@
 #body_{
     background-color:rgb(206, 206, 206);
 }
+
+/* .card:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+} */
+
+.login-input{
+    text-align: center;
+}
