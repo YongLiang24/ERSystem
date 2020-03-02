@@ -1,20 +1,25 @@
 //nav bar logic starts
 let nav01 = document.getElementById("nav01");
 let nav02 = document.getElementById("nav02");
+let nav03 = document.getElementById("nav03");
+let nav04 = document.getElementById("nav04");
+let mainContent = document.getElementById("main-content");
 let empNav = document.getElementById("emp-nav");
 let timeObj = document.getElementById("time");
 // nav01.style.display="none";
 // nav02.style.display="none";
 // nav01.style.display="block";
 // nav02.style.display="block";
-
+// $("#welcome-page").hide();
 // $("#emp-nav").hide();
 // $("#emp-nav").show();
+$("#table_").hide();
 $("#login-card").hide();
     clockDisplay()
     $("#request-card").hide();
 
     nav01.addEventListener('click', function(){
+        $("#table_").hide();
         $("#request-card").hide();
         $("#welcome-page").show();
         console.log("click check script")
@@ -27,11 +32,18 @@ $("#login-card").hide();
         //  });
     })
     nav02.addEventListener('click', function(){
+        $("#table_").hide();
         $("#welcome-page").hide();
         $("#request-card").show();
         console.log("click check script two")
     })
 
+    nav03.addEventListener('click', ()=>{
+        console.log("check nav03")
+        $("#request-card").hide();
+        $("#welcome-page").hide();
+        $("#table_").show();
+    })
     
 //nav bar logic ends
 

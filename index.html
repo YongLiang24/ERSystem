@@ -26,9 +26,9 @@
             <a ref="" class="invisible">xxx</a>
             <li class="nav-item"><a class="nav-link" href="#" id="nav02">Submit Request</a></li>
             <a ref="" class="invisible">xxx</a>
-            <li class="nav-item"><a class="nav-link" href="#">View Request</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="nav03">View Request</a></li>
             <a ref="" class="invisible">xxx</a>
-            <li class="nav-item"><a class="nav-link" href="#">My Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="nav04">My Profile</a></li>
           </ul>
           <button type="button" class="btn btn-dark" id="logout" >Logout</button>
           <button type="button" class="btn btn-dark" id="login">Login</button>
@@ -44,10 +44,6 @@
                 <h1 class="time">Welcome My friend</h1>
                 <h1 class="time" id="time" ></h1><br/><hr/>
                 <h5 class="time">What would you like to do today?</h3>
-
-
-
-
             </div>
             <!-- Login Card -->
             <div class="card border-dark mb-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="max-width: 18rem;" id="login-card">
@@ -85,7 +81,51 @@
                      <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
                     </form>
                 </div>
-
+                </div>
+                <!-- Requsts table -->
+                <div id="table_">
+                <span class="font-weight-bold ">Filter:</span>
+                <button type="button" class="btn btn-dark btn-sm ">Pending</button>
+                <button type="button" class="btn btn-dark btn-sm ">Resolved</button><br/><br/>
+                <table class="table" >
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Expense Amount</th>
+                            <th scope="col">Reimburse Amount</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Pending</td>
+                          <td>Travel</td>
+                          <td>$500</td>
+                          <td>pending</td>
+                          <td>12/23/2020</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Approved</td>
+                          <td>Lodging</td>
+                          <td>$200</td>
+                          <td>$100</td>
+                          <td>11/13/2017</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Pending</td>
+                          <td>Gas</td>
+                          <td>$50</td>
+                          <td>pending</td>
+                          <td>9/21/2016</td>
+                        </tr>
+                      </tbody>
+                </table>
+            </div>
 
 
 
