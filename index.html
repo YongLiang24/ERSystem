@@ -78,6 +78,8 @@
                      <textarea rows="4" id="spent-reason" class="form-control" placeholder="What did you spend on?" required></textarea>
                      <label for="cost" class="login-input"><strong> How much did you spend?</strong></label>
                      <input type="number" id="cost"class="form-control" required placeholder="Amount"><br/>
+                     <label for="file-attachment" class="font-weight-bold">Receipt</label>
+                     <input type="file" class="form-control-file" id="file-attachment"><br/>
                      <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
                     </form>
                 </div>
@@ -126,8 +128,35 @@
                       </tbody>
                 </table>
             </div>
-
-
+            <!-- Personal Information -->
+            <div class="card text-center " id="personal-info">
+              <div class="card-header">Personal Information</div>
+              <div class="card-body">
+                <form action="">
+                  <div class="form-group">
+                  <label for="first-name">First Name:</label>
+                  <input type="text" value="yong" id="first-name"><br/>
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" value="liang" id="last-name"><br/>
+                  <label for="email">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEmail:</label>
+                  <input type="email" value="yongliang24@gmail.com" id="email"><br/>
+                  <label for="phone">&nbsp&nbsp&nbspPhone #:</label>
+                  <input type="number" value="5102036233" id="phone"><br/>
+                  <label for="street">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStreet:</label>
+                  <input type="text" value="14200 ne 171st st" id="street"><br/>
+                  <label for="city">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCity:</label>
+                  <input type="text" value="woodinville" id="city"><br/>
+                  <label for="state">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspState:</label>
+                  <input type="text" value="Washington" id="state"><br/>
+                  <label for="country">&nbsp&nbsp&nbsp&nbspCountry</label>
+                  <input type="text" value="United State" id="country"><br/>
+                  <label for="zip">&nbsp&nbspZip Code:</label>
+                  <input type="number" value="98072" id="zip"><br/>    
+                  <input type="submit" id="info-submit" value="Save">
+                </div>
+                </form>
+              </div>
+            </div>
 
 
 

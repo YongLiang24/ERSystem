@@ -15,12 +15,14 @@ let timeObj = document.getElementById("time");
 // $("#emp-nav").show();
 $("#table_").hide();
 $("#login-card").hide();
-    clockDisplay()
-    $("#request-card").hide();
+clockDisplay()
+$("#request-card").hide();
+$("#personal-info").hide();
 
     nav01.addEventListener('click', function(){
         $("#table_").hide();
         $("#request-card").hide();
+        $("#personal-info").hide();
         $("#welcome-page").show();
         console.log("click check script")
         // fetch('http://date.jsontest.com/')
@@ -34,6 +36,7 @@ $("#login-card").hide();
     nav02.addEventListener('click', function(){
         $("#table_").hide();
         $("#welcome-page").hide();
+        $("#personal-info").hide();
         $("#request-card").show();
         console.log("click check script two")
     })
@@ -42,7 +45,15 @@ $("#login-card").hide();
         console.log("check nav03")
         $("#request-card").hide();
         $("#welcome-page").hide();
+        $("#personal-info").hide();
         $("#table_").show();
+    })
+
+    nav04.addEventListener('click', ()=>{
+        $("#request-card").hide();
+        $("#welcome-page").hide();
+        $("#table_").hide();
+        $("#personal-info").show();
     })
     
 //nav bar logic ends
